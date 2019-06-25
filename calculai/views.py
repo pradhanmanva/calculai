@@ -1,13 +1,12 @@
 import datetime
 import os
 
-from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render
 
 from calculai import models
 
-path = os.path.join(settings.BASE_DIR, 'UploadedMedia')
+path = os.path.join('/', 'home', 'pradhanmanva', 'UploadedMedia')
 
 
 def index(request):
